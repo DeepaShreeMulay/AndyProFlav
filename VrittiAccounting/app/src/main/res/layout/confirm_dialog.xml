@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edt_border_transprtant_white">
+
+    <EditText
+        android:id="@+id/edt_mob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:hint="Enter Password"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="16dp"
+        android:inputType="number"
+        android:maxLength="10"
+        android:background="@drawable/edt_border_transprtant"
+        android:imeOptions="actionDone"
+        android:layout_alignParentTop="true" />
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text=" Confirm "
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edt_border_blue"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:maxLength="12"
+        android:gravity="center"
+
+
+        android:layout_below="@+id/edt_mob"
+        android:layout_alignLeft="@+id/edt_mob"
+        android:layout_alignRight="@+id/edt_mob"/>
+    </RelativeLayout>

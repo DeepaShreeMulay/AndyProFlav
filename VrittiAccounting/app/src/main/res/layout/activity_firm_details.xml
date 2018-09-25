@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="?attr/actionBarSize"
+    tools:showIn="@layout/app_bar_main2">
+    <!--android:background="#f4f3f2"-->
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0EDE5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/llbank"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/shadow"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:id="@+id/ivbank"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="10dp"
+                        android:background="@drawable/shadow_pink"
+                        android:layout_gravity="center"
+                        android:src="@drawable/bank" />
+
+                    <TextView
+                        android:id="@+id/tvbank"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Bank"
+                        android:shadowColor="#5a5a5a"
+                        android:shadowDx="2"
+                        android:shadowDy="-2"
+                        android:shadowRadius="1.5"
+                        android:textColor="#DB3FF1"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="1dp"
+                    android:background="#e5e5e5"/>
+
+                <TextView
+                    android:id="@+id/tvbankbal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="17dp"
+                    android:shadowColor="#5a5a5a"
+                    android:shadowDx="2"
+                    android:shadowDy="-2"
+                    android:shadowRadius="1.5"
+                    android:text="Ur in Firm Details"
+                    android:textColor="#DB3FF1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llcash"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/shadow"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center">
+                <ImageView
+                    android:id="@+id/ivcash"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:background="@drawable/shadow_orange"
+                    android:layout_gravity="center"
+                    android:src="@drawable/cash" />
+
+                <TextView
+                    android:id="@+id/tvcash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Cash"
+                    android:shadowColor="#5a5a5a"
+                    android:shadowDx="2"
+                    android:shadowDy="-2"
+                    android:shadowRadius="1.5"
+                    android:textColor="#F18716"
+                    android:textSize="14dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="1dp"
+                    android:background="#e5e5e5"/>
+
+                <TextView
+                    android:id="@+id/tvcashbal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="17dp"
+                    android:shadowColor="#5a5a5a"
+                    android:shadowDx="2"
+                    android:shadowDy="-2"
+                    android:shadowRadius="1.5"
+                    android:text="Ur in Firm Details"
+                    android:textColor="#F18716" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/llsupp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/shadow"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/ivsupp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:background="@drawable/shadow_green"
+                    android:layout_gravity="center"
+                    android:src="@drawable/supplier" />
+
+                <TextView
+                    android:id="@+id/tvsupp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Supplier"
+                    android:shadowColor="#5a5a5a"
+                    android:shadowDx="2"
+                    android:shadowDy="-2"
+                    android:shadowRadius="1.5"
+                    android:textColor="#0CB41A"
+                    android:textSize="14dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="1dp"
+                    android:background="#e5e5e5"/>
+
+                <TextView
+                    android:id="@+id/tvsuppbal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="17dp"
+                    android:shadowColor="#5a5a5a"
+                    android:shadowDx="2"
+                    android:shadowDy="-2"
+                    android:shadowRadius="1.5"
+                    android:text="Ur in Firm Details"
+                    android:textColor="#0CB41A" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llcust"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/shadow"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center">
+                <ImageView
+                    android:id="@+id/ivcust"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shadow_blue"
+                    android:src="@drawable/customer" />
+
+                <TextView
+                    android:id="@+id/tvcust"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Customer"
+                    android:shadowColor="#5a5a5a"
+                    android:shadowDx="2"
+                    android:shadowDy="-2"
+                    android:shadowRadius="1.5"
+                    android:textColor="#283593"
+                    android:textSize="14dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="1dp"
+                    android:background="#e5e5e5"/>
+
+                <TextView
+                    android:id="@+id/tvcustbal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="17dp"
+                    android:shadowColor="#5a5a5a"
+                    android:shadowDx="2"
+                    android:shadowDy="-2"
+                    android:shadowRadius="1.5"
+                    android:text="Ur in Firm Details"
+                    android:textColor="#283593" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/lltrans"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/shadow"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/ivtrans"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:background="@drawable/shadow_brown"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bus" />
+
+                <TextView
+                    android:id="@+id/tvtrans"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Transporter"
+                    android:shadowColor="#5a5a5a"
+                    android:shadowDx="2"
+                    android:shadowDy="-2"
+                    android:shadowRadius="1.5"
+                    android:textColor="#4E342E"
+                    android:textSize="14dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="1dp"
+                    android:background="#e5e5e5"/>
+
+                <TextView
+                    android:id="@+id/tvtransbal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="17dp"
+                    android:shadowColor="#5a5a5a"
+                    android:shadowDx="2"
+                    android:shadowDy="-2"
+                    android:shadowRadius="1.5"
+                    android:text="Ur in Firm Details"
+                    android:textColor="#4E342E" />
+                <!--c41d4a-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llother"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/shadow"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center">
+                <ImageView
+                    android:id="@+id/ivother"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shadow_red"
+                    android:padding="10dp"
+                    android:src="@drawable/other_reciept" />
+
+                <TextView
+                    android:id="@+id/tvother"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:shadowColor="#5a5a5a"
+                    android:shadowDx="2"
+                    android:shadowDy="-2"
+                    android:shadowRadius="1.5"
+                    android:text="Other"
+                    android:textColor="#C32E2A"
+                    android:textSize="14dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="1dp"
+                    android:background="#e5e5e5"/>
+
+                <TextView
+                    android:id="@+id/tvotherbal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="17dp"
+                    android:shadowColor="#5a5a5a"
+                    android:shadowDx="2"
+                    android:shadowDy="-2"
+                    android:shadowRadius="1.5"
+                    android:text="Ur in Firm Details"
+                    android:textColor="#C32E2A"   />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

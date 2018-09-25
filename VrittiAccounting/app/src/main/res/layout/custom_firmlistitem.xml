@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/edt_border_transprtant_white"
+    >
+    <!--android:background="@drawable/edt_border_transprtant_white-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:orientation="vertical"
+            android:layout_weight="0.2">
+
+            <LinearLayout
+                android:id="@+id/llshopno"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/edt_border_orange">
+
+            <TextView
+                android:id="@+id/tvshopno"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="9"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+            android:layout_weight="0.8">
+
+            <TextView
+                android:id="@+id/tvnamemar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="left"
+                android:text="Company Name"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="#008000"/>
+            <TextView
+                android:id="@+id/tvexpirydate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:gravity="left"
+                android:text="Contract Expiry Date: 22 Jun 2017"
+                android:textSize="13dp"
+                android:textColor="#39b54a"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

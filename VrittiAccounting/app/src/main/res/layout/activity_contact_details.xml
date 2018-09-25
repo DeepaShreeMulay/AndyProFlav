@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/viewA"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="0.2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:weightSum="1">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.25"
+                        android:layout_gravity="center">
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/supcontc"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tvcontname"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Company Name"
+                            android:layout_marginTop="5dp"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorAccent"/>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="15dp"
+                            android:weightSum="1">
+
+                            <ImageView
+                                android:id="@+id/ivcontmob"
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginRight="5dp"
+                                android:src="@drawable/add_contact" />
+                            <TextView
+                                android:id="@+id/tvcontmob"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:text="8237858283"
+                                android:layout_marginTop="5dp"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorAccent"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/tvcontcity"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="City"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorAccent"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/balancelayoutid"
+                    android:layout_weight="0.8"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="0.95">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="8dp"
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        android:text="Days"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView4_Days"
+                                        android:textSize="18dp"
+                                        android:layout_weight="0.2"/>
+
+
+                                    <TextView
+                                        android:text="Balance"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:textAlignment="gravity"
+                                        android:id="@+id/textView5_Own"
+                                        android:textSize="18dp"
+                                        android:layout_weight="0.8" />
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        android:text="0-15"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView4_0_15"
+                                        android:textSize="15dp"
+                                        android:layout_weight="0.2"/>
+                                    <ProgressBar
+                                        android:id="@+id/customProgress1"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.55"
+                                        android:layout_gravity="center"
+                                        android:layout_height="wrap_content"
+                                        style="@style/CustomProgressBar1"/>
+
+                                    <TextView
+                                        android:text="Bal_0_15"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView5_0_15"
+                                        android:gravity="right"
+
+                                        android:textAlignment="gravity"
+                                        android:textSize="15dp"
+                                        android:layout_weight="0.25" />
+                                    <!--android:background="@drawable/edt_border_1"
+                                    android:textColor="@android:color/black"-->
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        android:text="16-30"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView4_16_30"
+                                        android:textSize="15dp"
+                                        android:layout_weight="0.2"/>
+                                    <ProgressBar
+                                        android:id="@+id/customProgress2"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.55"
+                                        android:layout_gravity="center"
+                                        android:layout_height="wrap_content"
+                                        style="@style/CustomProgressBar2"/>
+                                    <TextView
+                                        android:text="Bal_16_30"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="right"
+                                        android:textAlignment="gravity"
+                                        android:id="@+id/textView5_16_30"
+                                        android:textSize="15dp"
+                                        android:layout_weight="0.25" />
+                                    <!--
+                                        android:background="@drawable/edt_border_2"
+                                        android:textColor="@android:color/black"-->
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        android:text="31-60"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView4_31_60"
+                                        android:textSize="15dp"
+                                        android:layout_weight="0.2"/>
+
+                                    <ProgressBar
+                                        android:id="@+id/customProgress3"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.55"
+                                        android:layout_gravity="center"
+                                        android:layout_height="wrap_content"
+                                        style="@style/CustomProgressBar3"/>
+
+                                    <TextView
+                                        android:text="Bal_31_60"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="right"
+                                        android:textAlignment="gravity"
+                                        android:id="@+id/textView5_31_60"
+                                        android:textSize="15dp"
+                                        android:layout_weight="0.25" />
+                                    <!--
+                                        android:background="@drawable/edt_border_3"
+                                        android:textColor="@android:color/black"-->
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        android:text="61-90"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView4_61_90"
+                                        android:textSize="15dp"
+                                        android:layout_weight="0.2"/>
+
+                                    <ProgressBar
+                                        android:id="@+id/customProgress4"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.55"
+                                        android:layout_gravity="center"
+                                        android:layout_height="wrap_content"
+                                        style="@style/CustomProgressBar4"/>
+
+                                    <TextView
+                                        android:text="Bal_61_90"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="right"
+                                        android:textAlignment="gravity"
+                                        android:id="@+id/textView5_61_90"
+                                        android:textSize="15dp"
+                                        android:layout_weight="0.25" /><!--
+                        android:paddingRight="40dp"
+                        android:textColor="@android:color/black"
+                        android:background="@drawable/edt_border_4"-->
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        android:text="90+ "
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView4_m_90"
+                                        android:textSize="15dp"
+                                        android:layout_weight="0.2"/>
+                                    <ProgressBar
+                                        android:id="@+id/customProgress5"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.55"
+                                        android:layout_gravity="center"
+                                        android:layout_height="wrap_content"
+                                        style="@style/CustomProgressBar5"/>
+
+                                    <TextView
+                                        android:text="Bal_m_90"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="right"
+                                        android:textAlignment="gravity"
+                                        android:id="@+id/textView5_m_90"
+                                        android:textSize="15dp"
+                                        android:layout_weight="0.25" />
+                                    <!--android:background="@drawable/custom_pd_5"
+                                        android:textColor="@android:color/black"-->
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        android:text="Total"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView4_Total_bal"
+                                        android:textSize="15dp"
+                                        android:layout_weight="0.2"/>
+
+
+                                    <!--<ProgressBar
+                                        android:id="@+id/customProgress6"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.55"
+                                        android:layout_gravity="center"
+                                        android:layout_height="wrap_content"
+                                        style="@style/CustomProgressBarPink"/>-->
+
+                                    <TextView
+                                        android:text="Total_bal"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="right"
+                                        android:textAlignment="gravity"
+                                        android:id="@+id/textView5_Total_bal"
+                                        android:textSize="15dp"
+                                        android:layout_weight="0.8" />
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        android:text="Average"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:gravity="center_vertical"
+                                        android:id="@+id/textView4_Bal_Avg"
+                                        android:textSize="15dp"
+                                        android:layout_weight="0.2"/>
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.61"
+                                        android:layout_gravity="center"
+                                        android:layout_height="40dp"/>
+                                    <ImageView
+                                        android:text="Bal_Avg"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:gravity="right"
+                                        android:layout_gravity="right"
+                                        android:id="@+id/textView5_Bal_Avg"
+                                        android:src="@drawable/rate1"
+                                        android:layout_weight="0.19"/>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:gravity="center|center_vertical"
+                                android:layout_weight="0.05">
+
+                                <ImageView
+                                    android:id="@+id/next_arrow"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_centerVertical="true"
+                                    android:gravity="center|center_vertical"
+                                    android:src="@drawable/icon_right_arrow" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewB"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvcontbal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Balance Rs 123456.00 Credit"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="18dp"
+                    android:textColor="@android:color/white"/>
+                <TextView
+                    android:id="@+id/tvcontdate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="As on 13 Nov, 1993"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_msg"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:clickable="true"
+        android:src="@drawable/iconmsg"
+        app:layout_anchor="@id/viewA"
+        app:layout_anchorGravity="bottom|center"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_call"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:clickable="true"
+        android:src="@drawable/phone"
+        app:layout_anchor="@id/viewA"
+        app:layout_anchorGravity="bottom|left|end"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_whatsapp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:src="@drawable/btnwhatsapp"
+        app:layout_anchor="@id/viewA"
+        app:layout_anchorGravity="bottom|right|end"/>
+
+</android.support.design.widget.CoordinatorLayout>

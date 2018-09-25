@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DebitFragment">
+<!--
+    tools:context="info.androidhive.materialtabs.fragments.OneFragment"-->-->
+    <LinearLayout
+        android:id="@+id/viewA"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:weightSum="1">
+
+            <TextView
+                android:text="Amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:layout_weight="0.325"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="1dp"/>
+
+            <TextView
+                android:text="Date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:textSize="20dp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="0.3" />
+
+            <TextView
+                android:text="Description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textAlignment="gravity"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="0.375" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listview_balance_debit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewB"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#fff"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tv_tot_deb"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.325"
+                    android:gravity="right|center_vertical"
+                    android:text="Amount"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.3" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.375" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvcontbal_deb"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:gravity="left"
+                android:text="Balance Rs 123456.00 Credit"
+                android:textColor="@android:color/white"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tvcontdate_deb"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="1dp"
+                android:gravity="right"
+                android:text="As on 13 Nov, 1993"
+                android:textColor="@android:color/white"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

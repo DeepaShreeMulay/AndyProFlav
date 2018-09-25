@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#008000</color>
+    <color name="colorCredit">#ff0000</color>
+    <color name="colorDebit">#39b54a</color>
+    <color name="colorDebit1">#0d810d</color>
+    <color name="colorNeg">#FF6666</color>
+
+</resources>
+
+    <!--#FF4081
+    ""-->
